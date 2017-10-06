@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "682071650359",
+    "firebase_url": "https://biggq-639c2.firebaseio.com",
+    "project_id": "biggq-639c2",
+    "storage_bucket": "biggq-639c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682071650359:android:d6dc0a35048584c4",
+        "android_client_info": {
+          "package_name": "com.wemob.app.biggq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682071650359-pqc90q4rrdofm305qg5o76mfanmhiahf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wemob.app.biggq",
+            "certificate_hash": "fb13741884eb1acffebb0932640d223a245d5024"
+          }
+        },
+        {
+          "client_id": "682071650359-ul2sieg517s1pl1hfl5pdpk0841f3q38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCohP4A1VGM1gVxXMD_uAkKsRSu_gEj-9o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682071650359-ul2sieg517s1pl1hfl5pdpk0841f3q38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

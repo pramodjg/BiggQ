@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_ask"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/fab_back"
+        />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Confirm Payment"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      android:layout_margin="10dp"
+      android:id="@+id/txtTitle"
+      android:textColor="@color/black"
+      android:layout_gravity="center_horizontal"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/txtamountvalue"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorTabHighlight"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_weight=".5"
+        android:background="@color/colorTabHighlight"
+        android:textColor="@color/white"
+        android:layout_margin="3dp"
+        android:text="Confirm" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_weight=".5"
+            android:background="@color/colorTabHighlight"
+            android:textColor="@color/white"
+            android:layout_margin="3dp"
+            android:text="Cancel" />
+        </LinearLayout>
+</LinearLayout>

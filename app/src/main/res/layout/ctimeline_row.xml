@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    card_view:cardCornerRadius="2dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/question_row"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/crowTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Time"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/crowDate"
+            android:padding="5dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="center_horizontal"
+            android:text="Date"
+            />
+
+    </LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--&gt;-->
+
+
+        <!--<View-->
+            <!--android:id="@+id/crowUpperLine"-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@android:color/darker_gray"-->
+            <!--android:layout_above="@+id/crowImg"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--/>-->
+
+        <!--<View-->
+            <!--android:id="@+id/crowLowerLine"-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@android:color/darker_gray"-->
+            <!--android:layout_below="@+id/crowImg"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--/>-->
+
+
+        <!--<View-->
+            <!--android:id="@+id/crowBackground"-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/circle_shape"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/crowImg"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--/>-->
+
+
+
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/crowDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+            android:text="Description"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:id="@+id/answer_row"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/anscrowTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Time"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                />
+            <TextView
+                android:id="@+id/anscrowDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="center_horizontal"
+                android:text="Date"
+                />
+
+        </LinearLayout>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--&gt;-->
+
+
+            <!--<View-->
+                <!--android:id="@+id/anscrowUpperLine"-->
+                <!--android:layout_width="2dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:layout_above="@+id/anscrowImg"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--/>-->
+
+            <!--<View-->
+                <!--android:id="@+id/anscrowLowerLine"-->
+                <!--android:layout_width="2dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:layout_below="@+id/anscrowImg"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--/>-->
+
+
+            <!--<View-->
+                <!--android:id="@+id/anscrowBackground"-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@drawable/circle_shape"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/anscrowImg"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--/>-->
+
+
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="@android:color/transparent">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgthumbnail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="96dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/card_thumb_image" />
+
+                    <TextView
+                        android:id="@+id/txtsubject"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_text_green"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="DIA MIRZA"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/txtamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:textColor="#FFFFFF" />
+
+
+                    <ImageButton
+                        android:id="@+id/imgplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/playbutton" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frameLayout"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:src="#00000000"
+                        android:id="@+id/po_image2"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@color/colorTabHighlight"
+                        app:allow_random_color="false"
+                        app:siShape="@raw/heart"/>
+
+                    <TextView
+                        android:id="@+id/txtfav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="txt" />
+
+                    <TextView
+                        android:id="@+id/txtshare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/share"
+                        android:drawablePadding="5dp"
+                        android:text="txddt" />
+
+                    <TextView
+                        android:id="@+id/txtcomment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/comment"
+                        android:drawablePadding="5dp"
+                        android:text="txtdd" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

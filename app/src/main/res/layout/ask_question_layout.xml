@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    >
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/askback"
+    android:padding="20dp"
+    android:weightSum="1"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:background="#edebeb"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_weight=".2"
+            android:textSize="12dp"
+            android:text="TO : " />
+        <AutoCompleteTextView
+            android:id="@+id/edCelebrityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight=".8"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/search_ico"
+            android:inputType="textPersonName"
+            android:background="@color/white"
+            android:completionThreshold="1"
+            android:text="Name" />
+
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/edQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_weight=".5"
+        android:inputType="textMultiLine"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:hint="Ask your question" />
+
+    <EditText
+        android:id="@+id/edOfferAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:hint="Answer Amount ( Min. Quote Rs. 2000 )"
+        android:inputType="number" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/adAnswerAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Amount to View Answer" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <ToggleButton
+                android:id="@+id/btnFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:textSize="12dp"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/popup_button_back_selected"
+                android:textOff="Free"
+                android:textOn="Free"/>
+
+            <ToggleButton
+                android:id="@+id/btn15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:background="@drawable/popup_button_back_selected"
+                android:textOff="Rs. 15"
+                android:textOn="Rs. 15"/>
+
+            <ToggleButton
+                android:id="@+id/btn20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:textSize="12dp"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/popup_button_back_selected"
+                android:textOff="Rs. 20"
+                android:textOn="Rs. 20" />
+            <ToggleButton
+                android:id="@+id/btn25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:background="@drawable/popup_button_back_selected"
+                android:textOff="Rs. 25"
+                android:textOn="Rs. 25" />
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submit_btn_back"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:text="Submit" />
+
+
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitle_One"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Earlier" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lstearlier"
+        android:divider="@null"
+        android:layout_height="240dp">
+
+    </ListView>
+    <TextView
+        android:id="@+id/txtTitle_Two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Previous" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"/>
+    <ListView
+        android:id="@+id/lstprevious"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="240dp">
+
+    </ListView>
+</LinearLayout>

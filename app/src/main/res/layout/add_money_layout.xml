@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="10dp"
+        android:text="SELECT PAYMENT MODE" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:divider="#cccccc"
+        android:dividerPadding="1dp"
+
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit/Credit Card" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Net Banking" />
+
+        <RadioButton
+            android:id="@+id/radio_thr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other Payment Modes" />
+
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTabHighlight"
+        android:textColor="@color/white"
+        android:text="SUBMIT" />
+
+
+</LinearLayout>
